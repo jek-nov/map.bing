@@ -1,0 +1,32 @@
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.exe.config
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.exe
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.pdb
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\bin\Debug\Microsoft.Maps.MapControl.WPF.dll
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.csprojResolveAssemblyReference.cache
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\MainWindow.baml
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\MainWindow.g.cs
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\App.g.cs
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps_MarkupCompile.cache
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.g.resources
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.Properties.Resources.resources
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.csproj.GenerateResource.Cache
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.exe
+c:\users\администратор\documents\visual studio 2013\Projects\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.pdb
+C:\Users\orlov_000\Desktop\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.exe.config
+C:\Users\orlov_000\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.exe
+C:\Users\orlov_000\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.pdb
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.exe.config
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.exe
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.pdb
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.exe
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\bin\Debug\WpfBingMaps.pdb
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.csprojResolveAssemblyReference.cache
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\MainWindow.baml
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\MainWindow.g.cs
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\App.g.cs
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps_MarkupCompile.cache
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.g.resources
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.Properties.Resources.resources
+C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.csproj.GenerateResource.Cache
