@@ -64,6 +64,7 @@ namespace WpfBingMaps
         BingMapPointData bingMapPoint { get; set; }
         Pushpin pin { get; set; }
         Rectangle rectangle { get; set; }
+        Rectangle rectangleFromMiddle { get; set; }
         double pixelGlobeSize { get; set; }
         double pixelsDegreesRatio { get; set; }
         double pixelsRadiansRatio { get; set; }
@@ -115,6 +116,9 @@ namespace WpfBingMaps
                 TextBlockLongitude.Text = pinLocation.Longitude.ToString();
                 TextBlockX.Text = bingMapPoint.X.ToString();
                 TextBlockY.Text = bingMapPoint.Y.ToString();
+                TextBlockTileX.Text = (bingMapPoint.X / 256).ToString();
+                TextBlockTileY.Text = (bingMapPoint.Y / 256).ToString();
+                TextBlockZoomLevel.Text = Convert.ToInt32(MapObject.ZoomLevel).ToString();
             };
 
             MapObject.ViewChangeOnFrame += (sender, arguments) =>
@@ -128,6 +132,56 @@ namespace WpfBingMaps
                 TextBlockLongitude.Text = pin.Location.Longitude.ToString();
                 TextBlockX.Text = bingMapPoint.X.ToString();
                 TextBlockY.Text = bingMapPoint.Y.ToString();
+                TextBlockTileX.Text = (bingMapPoint.X / 256).ToString();
+                TextBlockTileY.Text = (bingMapPoint.Y / 256).ToString();
+                TextBlockZoomLevel.Text = Convert.ToInt32(MapObject.ZoomLevel).ToString();
+            };
+
+            ButtonSetMapPosition.Click += (senser, args) =>
+            {
+                Location position;
+
+                try 
+                {
+                    var latitude = Convert.ToDouble(TextBoxLatitude.Text.Replace(",","."));
+                    var longitude = Convert.ToDouble(TextBoxLongitude.Text.Replace(",", "."));
+
+                    if (latitude < -90 || latitude > 90)
+                        latitude %= 85;
+
+                    if (longitude < -180 || longitude > 180)
+                        longitude %= 180;
+
+                    position = new Location(latitude, longitude);
+                }
+                catch (Exception exception)
+                {
+                    MessageBox.Show("Не получается конвертировать в Double. Exception:" + exception.Message);
+                    return;
+                }
+
+                if (position == null)
+                    return;
+
+                MapObject.SetView(position, MapObject.ZoomLevel);
+
+                // The pushpin to add to the map.
+                if (pin == null)
+                {
+                    pin = new Pushpin();
+                }
+                else
+                {
+                    MapObject.Children.Remove(pin);
+                }
+
+                pin.Location = position;
+                // Adds the pushpin to the map.
+                MapObject.Children.Add(pin);
+
+                TextBlockLatitude.Text = pin.Location.Latitude.ToString();
+                TextBlockLongitude.Text = pin.Location.Longitude.ToString();
+                TextBlockZoomLevel.Text = Convert.ToInt32(MapObject.ZoomLevel).ToString();
             };
         }
 
@@ -209,6 +263,36 @@ namespace WpfBingMaps
             }
 
             MainGrid.Children.Add(rectangle);
+        }
+
+        void DrawScreenPointFromCenter(double Xobj, double Yobj)
+        {
+            var Xmiddle = MapObject.ActualWidth/2;
+            var Ymiddle = MapObject.ActualHeight/2;
+
+            var offsetX = Xobj - Xmiddle;
+            var offsetY = Yobj - Ymiddle;
+            
+            if (rectangleFromMiddle == null)
+            {
+                rectangleFromMiddle = new Rectangle()
+                {
+                    Stroke = Brushes.Black,
+                    Fill = Brushes.Blue,
+                    Width = Convert.ToDouble(10),
+                    Height = Convert.ToDouble(10),
+                    Margin = new Thickness(left: (Xmiddle + offsetX), top: (Ymiddle + offsetY), right: 0, bottom: 0),
+                    HorizontalAlignment = HorizontalAlignment.Left,
+                    VerticalAlignment = VerticalAlignment.Top,
+                };
+            }
+            else
+            {
+                MainGrid.Children.Remove(rectangleFromMiddle);
+                rectangle.Margin = new Thickness(left: Xobj, top: Yobj, right: 0, bottom: 0);
+            }
+
+            MainGrid.Children.Add(rectangleFromMiddle);
         }
 
         //void MainWindow_Loaded(object sender, RoutedEventArgs e)

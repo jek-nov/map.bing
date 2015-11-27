@@ -5,16 +5,40 @@
         Title="MainWindow" Height="657" Width="640">
     <Grid x:Name="MainGrid">
         <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
             <RowDefinition/>
             <RowDefinition Height="140"/>
         </Grid.RowDefinitions>
 
-        <m:Map x:Name="MapObject" Grid.Row="0" CredentialsProvider="AmWjXy-2rjWKhLA9iwAEBH1TQAIdP-ekaUGlLg6PoN3QN0fcf-0rYG28C6vhMosl" Margin="0"/>
+        <Grid Grid.Row="0" Background="#82000000" Margin="5">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition />
+                <ColumnDefinition Width="50"/>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition Width="100"/>
+            </Grid.ColumnDefinitions>
 
-        <Grid Grid.Row="1" Background="#82000000" VerticalAlignment="Bottom" Margin="20">
-            <Grid Margin="20">
+            <TextBlock Text="Lat:" HorizontalAlignment="Center" Foreground="White" FontSize="16" Margin="3"/>
+            <TextBox Grid.Column="1" x:Name="TextBoxLatitude" Margin="3"/>
+
+            <TextBlock Grid.Column="2" Text="Long:" HorizontalAlignment="Center" Foreground="White" FontSize="16" Margin="3" />
+            <TextBox Grid.Column="3" x:Name="TextBoxLongitude" Margin="3"/>
+            
+            <Button Grid.Column="4" x:Name="ButtonSetMapPosition" Margin="3" Content="SetView" FontSize="16"/>
+
+            <TextBlock Grid.Column="5" x:Name="TextBlockZoomLevel" Text="Zoom: " Foreground="White" Margin="3" FontSize="16"/>
+
+        </Grid>
+        
+        <m:Map x:Name="MapObject" Grid.Row="1" CredentialsProvider="AmWjXy-2rjWKhLA9iwAEBH1TQAIdP-ekaUGlLg6PoN3QN0fcf-0rYG28C6vhMosl" Margin="0"/>
+
+        <Grid Grid.Row="2" Background="#82000000" Margin="10">
+            <Grid Margin="10">
                 <Grid.RowDefinitions>
-                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="30"/>
+                    <RowDefinition Height="30"/>
                     <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Grid.ColumnDefinitions>
@@ -31,14 +55,20 @@
                 <TextBlock Text="Longitude:" Grid.Column="2" HorizontalAlignment="Center" Foreground="White" FontSize="16"/>
                 <TextBlock Text="0" Grid.Column="3" x:Name="TextBlockLongitude" HorizontalAlignment="Left" Foreground="White" FontSize="16"/>
 
-                <!--Z/X-->
+                <!--X/Y-->
                 <TextBlock Text="X:" Grid.Row="1" HorizontalAlignment="Center" Foreground="White" FontSize="16"/>
                 <TextBlock Text="0" Grid.Row="1" Grid.Column="1" x:Name="TextBlockX" HorizontalAlignment="Left" Foreground="White" FontSize="16"/>
 
                 <TextBlock Text="Y:" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Center" Foreground="White" FontSize="16"/>
                 <TextBlock Text="0" Grid.Row="1" Grid.Column="3" x:Name="TextBlockY" HorizontalAlignment="Left" Foreground="White" FontSize="16"/>
 
+                <!--TyleX/Y-->
+                <TextBlock Text="TileX:" Grid.Row="2" HorizontalAlignment="Center" Foreground="White" FontSize="16"/>
+                <TextBlock Text="0" Grid.Row="2" Grid.Column="1" x:Name="TextBlockTileX" HorizontalAlignment="Left" Foreground="White" FontSize="16"/>
+
+                <TextBlock Text="TileY:" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" Foreground="White" FontSize="16"/>
+                <TextBlock Text="0" Grid.Row="2" Grid.Column="3" x:Name="TextBlockTileY" HorizontalAlignment="Left" Foreground="White" FontSize="16"/>
             </Grid>
-    </Grid>
+        </Grid>
     </Grid>
 </Window>

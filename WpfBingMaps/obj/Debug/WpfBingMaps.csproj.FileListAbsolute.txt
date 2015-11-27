@@ -30,3 +30,17 @@ C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps_MarkupCompi
 C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.g.resources
 C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.Properties.Resources.resources
 C:\Users\jek_n\Desktop\WpfBingMaps\WpfBingMaps\obj\Debug\WpfBingMaps.csproj.GenerateResource.Cache
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\bin\Debug\WpfBingMaps.exe.config
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.exe
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.pdb
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\bin\Debug\WpfBingMaps.exe
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\bin\Debug\WpfBingMaps.pdb
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\bin\Debug\Microsoft.Maps.MapControl.WPF.xml
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.csprojResolveAssemblyReference.cache
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\MainWindow.baml
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\MainWindow.g.cs
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\App.g.cs
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps_MarkupCompile.cache
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.g.resources
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.Properties.Resources.resources
+C:\Users\jek_n\Documents\GitHub\map.bing\WpfBingMaps\obj\Debug\WpfBingMaps.csproj.GenerateResource.Cache
